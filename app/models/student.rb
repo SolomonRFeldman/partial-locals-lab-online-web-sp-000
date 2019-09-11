@@ -15,5 +15,6 @@ class Student < ActiveRecord::Base
   has_many :classrooms, through: :classroom_students
   
   def search(term)
-    if term
+    if term.present?
+      Student.where('')
 end
