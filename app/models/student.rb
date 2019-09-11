@@ -17,4 +17,6 @@ class Student < ActiveRecord::Base
   def search(query)
     if term.present?
       Student.where('name LIKE ?' query)
+    end
+  end
 end
